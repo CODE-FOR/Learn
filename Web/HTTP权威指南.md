@@ -45,7 +45,7 @@ URL也包括其它组成部分
 
   如果如图所示的情况：
 
-  <img src="F:\OneDrive\Learn\Web\assests\image-20211217130451385.png" alt="image-20211217130451385" align=left style="zoom:50%;" />
+  <img src="assests\image-20211217130451385.png" alt="image-20211217130451385" align=left style="zoom:50%;" />
 
   `Meter`首部选项则只与服务器和代理直接的HTTP连接有关，在代理向客户端发送的首部中应该剔除`Meter`选项，同时也应该剔除`Connection`首部
 
@@ -55,7 +55,7 @@ URL也包括其它组成部分
 
 #### 4.3.2 串行事务处理时延
 
-<img src="C:\Users\liuzhenwei\AppData\Roaming\Typora\typora-user-images\image-20211217131617989.png" alt="image-20211217131617989" align=left style="zoom:67%;" />
+<img src="assests\image-20211217131617989.png" alt="image-20211217131617989" align=left style="zoom:67%;" />
 
 **提升HTTP的连接性能**
 
@@ -66,7 +66,7 @@ URL也包括其它组成部分
 
 ### 4.4 并行连接
 
-<img src="C:\Users\liuzhenwei\AppData\Roaming\Typora\typora-user-images\image-20211217132819377.png" alt="image-20211217132819377" align=left style="zoom:67%;" />
+<img src="assests\image-20211217132819377.png" alt="image-20211217132819377" align=left style="zoom:67%;" />
 
 ### 4.5 持久连接
 
@@ -76,7 +76,7 @@ URL也包括其它组成部分
 
 #### 4.5.2 HTTP/1.0 + keep-alive连接
 
-<img src="C:\Users\liuzhenwei\AppData\Roaming\Typora\typora-user-images\image-20211217133241623.png" alt="image-20211217133241623" align=left style="zoom:67%;" />
+<img src="assests\image-20211217133241623.png" alt="image-20211217133241623" align=left style="zoom:67%;" />
 
 #### 4.5.3 keep-alive操作
 
@@ -86,7 +86,7 @@ URL也包括其它组成部分
 
 **可能存在的问题，哑代理**
 
-<img src="C:\Users\liuzhenwei\AppData\Roaming\Typora\typora-user-images\image-20211217141236000.png" alt="image-20211217141236000" align=left style="zoom:67%;" />
+<img src="assests\image-20211217141236000.png" alt="image-20211217141236000" align=left style="zoom:67%;" />
 
 原因：代理无法理解`Connection: Keep-Alive`，对所有的头部包括`Connection`选项盲目的转发，使得服务器和客户端都错误的认为与对方建立了持久连接，但是代理并没有处理能力，因此等待服务器与其关闭连接，但是服务器认为建立了持久连接，并不关闭与代理的连接，客户端的请求无法到达服务器。
 
@@ -94,11 +94,11 @@ URL也包括其它组成部分
 
 使用`Proxy-Connection`首部，代理将`Proxy-Connection`转换为`Connection:Keep-Alive`
 
-<img src="C:\Users\liuzhenwei\AppData\Roaming\Typora\typora-user-images\image-20211217144404679.png" alt="image-20211217144404679" align=left style="zoom:67%;" />
+<img src="assests\image-20211217144404679.png" alt="image-20211217144404679" align=left style="zoom:67%;" />
 
 但是只能修复**单个盲中继的问题**
 
-<img src="C:\Users\liuzhenwei\AppData\Roaming\Typora\typora-user-images\image-20211217143543914.png" alt="image-20211217143543914" align=left style="zoom:67%;" />
+<img src="assests\image-20211217143543914.png" alt="image-20211217143543914" align=left style="zoom:67%;" />
 
 #### 4.5.8 HTTP/1.1 持久连接
 
@@ -106,7 +106,7 @@ URL也包括其它组成部分
 
 ### 4.6 管道化连接
 
-<img src="C:\Users\liuzhenwei\AppData\Roaming\Typora\typora-user-images\image-20211217151409368.png" alt="image-20211217151409368" align=left style="zoom:67%;" />
+<img src="assests\image-20211217151409368.png" alt="image-20211217151409368" align=left style="zoom:67%;" />
 
 ### 4.7 关闭连接
 
@@ -139,7 +139,7 @@ URL也包括其它组成部分
 
 #### 5.5.2 连接的输入/输出处理结构
 
-<img src="C:\Users\liuzhenwei\AppData\Roaming\Typora\typora-user-images\image-20211217212032254.png" alt="image-20211217212032254" align=left style="zoom:67%;" />
+<img src="assests\image-20211217212032254.png" alt="image-20211217212032254" align=left style="zoom:67%;" />
 
 
 
@@ -147,7 +147,7 @@ URL也包括其它组成部分
 
 ### 6.1 代理服务器
 
-<img src="C:\Users\liuzhenwei\AppData\Roaming\Typora\typora-user-images\image-20211213151502083.png" alt="image-20211213151502083" align="left" style="zoom:100%;" />
+<img src="assests\image-20211213151502083.png" alt="image-20211213151502083" align="left" style="zoom:100%;" />
 
 HTTP代理服务器既是Web`服务器`又是Web`客户端`
 
@@ -168,13 +168,13 @@ HTTP代理服务器既是Web`服务器`又是Web`客户端`
 
 对服务器**隐藏真实请求的客户端**
 
-<img src="F:\OneDrive\Learn\Web\assests\v2-07ededff1d415c1fa2db3fd89378eda0_720w.jpg" alt="v2-07ededff1d415c1fa2db3fd89378eda0_720w" style="zoom:80%;" />
+<img src="assests\v2-07ededff1d415c1fa2db3fd89378eda0_720w.jpg" alt="v2-07ededff1d415c1fa2db3fd89378eda0_720w" style="zoom:80%;" />
 
 客户端**知晓**要访问的服务器，服务器**不知晓**真正发起请求的客户端
 
 ##### 反向代理
 
-对客户端**隐藏真实请求的服务器**<img src="F:\OneDrive\Learn\Web\assests\v2-816f7595d80b7ef36bf958764a873cba_720w.jpg" alt="v2-816f7595d80b7ef36bf958764a873cba_720w" style="zoom:80%;" />
+对客户端**隐藏真实请求的服务器**<img src="assests\v2-816f7595d80b7ef36bf958764a873cba_720w.jpg" alt="v2-816f7595d80b7ef36bf958764a873cba_720w" style="zoom:80%;" />
 
 客户端**不知晓**实际访问的服务器，代理服务器对最终访问的服务器做了隐藏。
 
@@ -189,7 +189,7 @@ HTTP代理服务器既是Web`服务器`又是Web`客户端`
 - 反向代理：部署在**网络边缘，Web服务器之前**
 - 网络交换代理：部署在**因特网对等交换点**
 
-<img src="F:\OneDrive\Learn\Web\assests\A9155344F825DB31318B2D85FC5E15A1.png" alt="A9155344F825DB31318B2D85FC5E15A1" style="zoom:50%" align="left" />
+<img src="assests\A9155344F825DB31318B2D85FC5E15A1.png" alt="A9155344F825DB31318B2D85FC5E15A1" style="zoom:50%" align="left" />
 
 #### 代理如何获取流量
 
@@ -198,7 +198,7 @@ HTTP代理服务器既是Web`服务器`又是Web`客户端`
 - 修改DNS的命名空间
 - 修改Web服务器：Web服务器向客户端发送HTTP重定向指令，将客户端请求重定向到另一个代理
 
-<img src="F:\OneDrive\Learn\Web\assests\687785D23B9BE8B3E73A2A70D6D22ACE.png" alt="687785D23B9BE8B3E73A2A70D6D22ACE" align=left style="zoom:50%;" />
+<img src="assests\687785D23B9BE8B3E73A2A70D6D22ACE.png" alt="687785D23B9BE8B3E73A2A70D6D22ACE" align=left style="zoom:50%;" />
 
 ### 6.4 客户端配置代理
 
@@ -242,7 +242,7 @@ function FindProxyForURL(url, host) {
 >
 > 加密和解密使用**同一个密钥**，常见的对称加密有DES、3DES和AES。
 >
-> <img src="F:\OneDrive\Learn\Web\assests\bVbCz9u.png" alt="对称加密数据传输过程" align=left style="zoom:80%;" />
+> <img src="assests\bVbCz9u.png" alt="对称加密数据传输过程" align=left style="zoom:80%;" />
 >
 > 存在一个**致命**的问题，双方需要使用相同的密钥，在加密传输信息之前，需要协商使用的密钥，需要由一方**明文的传输密钥**给另一方。密钥有可能被截获，因此不够安全。
 >
@@ -250,7 +250,7 @@ function FindProxyForURL(url, host) {
 >
 > 加密和解密使用两个不同的密钥：公钥（public key）和私钥（private key）。公钥和私钥是一对，公钥加密，只有通过私钥才能解密。
 >
-> <img src="F:\OneDrive\Learn\Web\assests\bVbClUi.png" align=left alt="非对称加密发送 KEY 的过程.png" style="zoom:80%;" />
+> <img src="assests\bVbClUi.png" align=left alt="非对称加密发送 KEY 的过程.png" style="zoom:80%;" />
 >
 > 最后使用公钥加密生成的密钥KEY，保证了对称加密的密钥KEY的传输安全。
 >
@@ -258,7 +258,7 @@ function FindProxyForURL(url, host) {
 >
 > ### 3. HTTPS原理
 >
-> <img src="F:\OneDrive\Learn\Web\assests\2641864607-5e11d65c74244_fix732.png" alt="2641864607-5e11d65c74244_fix732" align=left style="zoom:80%;" />
+> <img src="assests\2641864607-5e11d65c74244_fix732.png" alt="2641864607-5e11d65c74244_fix732" align=left style="zoom:80%;" />
 >
 > **插入：** HTTPS**不加密ip、端口**
 >
@@ -280,7 +280,7 @@ function FindProxyForURL(url, host) {
 
 `CONNECT`方法请求隧道网关建立一条到达任意目的服务器和端口的**TCP连接**，并对客户端和服务器之间的后续数据进行**盲转发**。
 
-<img src="F:\OneDrive\Learn\Web\assests\image-20211218153150906.png" align=left alt="image-20211218153150906" style="zoom:67%;" />
+<img src="assests\image-20211218153150906.png" align=left alt="image-20211218153150906" style="zoom:67%;" />
 
 - 浏览器先**明文**向服务器发送`CONNECT`请求
 
@@ -302,7 +302,7 @@ function FindProxyForURL(url, host) {
 >
 > fiddler会以中间人模式代理
 >
-> <img src="F:\OneDrive\Learn\Web\assests\20180303002319_70386.png" alt="20180303002319_70386" align=left style="zoom:80%;" />
+> <img src="assests\20180303002319_70386.png" alt="20180303002319_70386" align=left style="zoom:80%;" />
 >
 > 为什么会截取**Tunnel to**，也就是HTTP **CONNECT**报文，按道理说使用中间人代理模式并不会使用Web Tunnel，但是依然出现了Tunnel to，而且fiddler可以解析后续的HTTPS报文。
 >
@@ -411,7 +411,7 @@ function FindProxyForURL(url, host) {
 >   ```python
 >   def select_proxy(url, proxies):
 >       """Select a proxy for the url, if applicable.
->   
+>     
 >       :param url: The url being for the request
 >       :param proxies: A dictionary of schemes or schemes and hosts to proxy URLs
 >       """
@@ -419,7 +419,7 @@ function FindProxyForURL(url, host) {
 >       urlparts = urlparse(url)
 >       if urlparts.hostname is None:
 >           return proxies.get(urlparts.scheme, proxies.get('all'))
->   
+>     
 >       proxy_keys = [
 >           urlparts.scheme + '://' + urlparts.hostname,
 >           urlparts.scheme,
@@ -431,7 +431,7 @@ function FindProxyForURL(url, host) {
 >           if proxy_key in proxies:
 >               proxy = proxies[proxy_key]
 >               break
->   
+>     
 >       return proxy
 >   ```
 >

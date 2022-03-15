@@ -41,7 +41,7 @@ target = iris.target
 
 寻找特征最接近的向量
 
-![../../_images/sphx_glr_plot_classification_001.png](F:\OneDrive\Learn\Machine Learning\learnSklearn\assets\sphx_glr_plot_classification_001.png)
+![../../_images/sphx_glr_plot_classification_001.png](assets\sphx_glr_plot_classification_001.png)
 
 > 维度灾难
 
@@ -56,7 +56,7 @@ target = iris.target
 
 $y=X\beta+\epsilon$
 
-<img src="F:\OneDrive\Learn\Machine Learning\learnSklearn\assets\sphx_glr_plot_ols_001.png" alt="../../_images/sphx_glr_plot_ols_001.png" style="zoom:50%;" />
+<img src="assets\sphx_glr_plot_ols_001.png" alt="../../_images/sphx_glr_plot_ols_001.png" style="zoom:50%;" />
 
 > 特征缩减 shrinkage
 
@@ -74,7 +74,7 @@ $y=X\beta+\epsilon$
 
 ##### 1.3.1 Logistic Regression
 
-![../../_images/sphx_glr_plot_logistic_001.png](F:\OneDrive\Learn\Machine Learning\learnSklearn\assets\sphx_glr_plot_logistic_001.png)
+![../../_images/sphx_glr_plot_logistic_001.png](assets\sphx_glr_plot_logistic_001.png)
 
 $y=sigmoid(X\beta-offest)+\epsilon$
 
